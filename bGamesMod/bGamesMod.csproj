@@ -1,0 +1,14 @@
+﻿
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\tModLoader.targets" />
+  <PropertyGroup>
+    <AssemblyName>bGamesMod</AssemblyName>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Images\bGames\afective.png" />
+    <None Remove="Images\bGames\cognitive.png" />
+    <None Remove="Images\bGames\phisical.png" />
+    <None Remove="Images\bGames\social.png" />
+  </ItemGroup>
+</Project>

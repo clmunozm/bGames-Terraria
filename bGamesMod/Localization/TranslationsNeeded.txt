@@ -1,0 +1,9 @@
+en-US, 283/283, 100%, missing 0
+de-DE, 152/283, 54%, missing 131
+it-IT, 0/283, 0%, missing 283
+fr-FR, 0/283, 0%, missing 283
+es-ES, 230/283, 81%, missing 53
+ru-RU, 254/283, 90%, missing 29
+zh-Hans, 0/283, 0%, missing 283
+pt-BR, 204/283, 72%, missing 79
+pl-PL, 0/283, 0%, missing 283
