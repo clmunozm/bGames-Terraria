@@ -1,8 +1,5 @@
-# HEROsMod
-HERO's Mod is the latest iteration of the Gameiki mod for tModLoader.
+# bGamesMod
+This mod was developed by Claudio Muñoz (https://github.com/clmunozm).
 
-This mod was originally developed by [chatrat12](https://github.com/chatrat12).
+bGames Mod is based on the Hero's Mod for tModLoader developed by javidpack (https://github.com/JavidPack/HEROsMod).
 
-Feel free to suggest new features and submit pull requests.
-
-![](http://javid.ddns.net/tModLoader/widget/widgetimage/HEROsMod.png)

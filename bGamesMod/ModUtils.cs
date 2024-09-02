@@ -39,10 +39,6 @@ namespace bGamesMod
 		public static event EventHandler InventoryChanged;
 
 		public static bool InterfaceVisible { get; set; }
-
-		/// <summary>
-		/// A 1x1 pixel white texture.
-		/// </summary>
 		public static Texture2D DummyTexture
 		{
 			get
@@ -59,10 +55,6 @@ namespace bGamesMod
 		public static KeyboardState PreviousKeyboardState { get; set; }
 		public static MouseState MouseState { get; set; }
 		public static MouseState PreviousMouseState { get; set; }
-
-		/// <summary>
-		/// Time in seconds that has passed since the last update call.
-		/// </summary>
 		public static float DeltaTime
 		{
 			get { return _deltaTime; }
@@ -91,10 +83,6 @@ namespace bGamesMod
 				return TextureAssets.Hue.Value;
 			}
 		}
-
-		/// <summary>
-		/// Gets or Sets if the game camera is free to move from the players position
-		/// </summary>
 		public static bool FreeCamera { get; set; }
 
 		public static NetworkMode NetworkMode
@@ -104,10 +92,6 @@ namespace bGamesMod
 				return (NetworkMode)Main.netMode;
 			}
 		}
-
-		/// <summary>
-		/// Server Side Characters Enabled
-		/// </summary>
 		public static bool SSC
 		{
 			get
@@ -149,7 +133,6 @@ namespace bGamesMod
 				ModUtils.DebugText(e.Message + " " + e.StackTrace);
 			}
 		}
-
 		public static void Update()
 		{
 			if (!Main.gameMenu)
@@ -257,9 +240,6 @@ namespace bGamesMod
 			player.fallStart = (int)(player.position.Y / 16f);
 		}
 
-		/// <summary>
-		/// Set the Delta Time
-		/// </summary>
 		/// <param name="gameTime">Games current Game Time</param>
 		public static void SetDeltaTime(/*GameTime gameTime*/)
 		{

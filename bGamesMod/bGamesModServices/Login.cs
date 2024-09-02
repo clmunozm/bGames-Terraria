@@ -114,9 +114,11 @@ namespace bGamesMod.bGamesModServices
 		{
 			UIView.exclusiveControl = this;
 
-			Width = 600;
+			
 			this.Anchor = AnchorPosition.Center;
-
+		
+			
+			
 			lUsername = new UILabel(bGamesMod.HeroText("Username"));
 			tbUsername = new UITextbox();
 			lPassword = new UILabel(bGamesMod.HeroText("Password"));
@@ -167,7 +169,7 @@ namespace bGamesMod.bGamesModServices
 			bLogin.Anchor = AnchorPosition.TopRight;
 			bCancel.Anchor = AnchorPosition.TopRight;
 
-			tbUsername.Width = 300;
+			tbUsername.Width = this.GetWidth();
 			tbPassword.Width = tbUsername.Width;
 			lUsername.X = spacing;
 			lUsername.Y = spacing;
@@ -181,17 +183,19 @@ namespace bGamesMod.bGamesModServices
 			lSaveLogin.Y = lPassword.Y + lPassword.Height + spacing;
 			bSaveNone.X = lSaveLogin.X + lSaveLogin.Width + spacing;
 			bSaveNone.Y = lSaveLogin.Y;
+		
 			bSaveDefault.X = bSaveNone.X + bSaveNone.Width;
 			bSaveDefault.Y = bSaveNone.Y;
 			bSavePlayer.X = bSaveDefault.X + bSaveDefault.Width;
 			bSavePlayer.Y = bSaveDefault.Y;
 			cbRememberPassword.X = bSaveNone.X;
 			cbRememberPassword.Y = lSaveLogin.Y + lSaveLogin.Height + spacing;
+			
 
-			bCancel.Position = new Vector2(this.Width - spacing, cbRememberPassword.Y + cbRememberPassword.Height + spacing);
+			bCancel.Position = new Vector2(this.GetWidth() - spacing, cbRememberPassword.Y + cbRememberPassword.Height + spacing);
 			bLogin.Position = new Vector2(bCancel.Position.X - bCancel.Width - spacing - lSaveLogin.Width / 2, bCancel.Position.Y);
 			this.Height = bCancel.Y + bCancel.Height + spacing;
-			
+
 			bSaveNone.Tooltip = bGamesMod.HeroText("SaveLoginNoneTooltip");
 			bSaveDefault.Tooltip = bGamesMod.HeroText("SaveLoginDefaultTooltip");
 			bSavePlayer.Tooltip = bGamesMod.HeroText("SaveLoginPlayerTooltip");
@@ -312,14 +316,14 @@ namespace bGamesMod.bGamesModServices
 
 				string username = tbUsername.Text;
 				string password = tbPassword.Text;
-				string url = $"http://localhost:3010/player/{username}/{password}";
+				string url = $"http://localhost:5001/player/{username}/{password}";
 
 				using (var httpClient = new HttpClient())
 				{
 					try
 					{
 						var response = await httpClient.GetAsync(url);
-						if (response.IsSuccessStatusCode)
+						if (response.IsSuccessStatusCode && Login.LoggedIn == false)
 						{
 							Login.userID = await response.Content.ReadAsStringAsync();
 							// Aquí puedes almacenar el userID según tus necesidades
@@ -328,7 +332,7 @@ namespace bGamesMod.bGamesModServices
 							Login.LoggedIn = true;
 							Close();
 						}
-						else
+						else if(Login.LoggedIn == false)
 						{
 							Main.NewText(bGamesMod.HeroText("InvalidCredentials"));
 						}
@@ -400,7 +404,7 @@ namespace bGamesMod.bGamesModServices
 
 		protected override float GetWidth()
 		{
-			return tbPassword.Width + lPassword.Width + spacing * 4;
+			return tbPassword.Width + lPassword.Width + spacing * 8;
 		}
 
 		private void Close()

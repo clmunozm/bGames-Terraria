@@ -1,7 +1,24 @@
-HERO's mod is a tools mod. It is a pick and choose server mod that allows you to decide how you want to run your world. You can turn on and off any features and you can allow different groups to use some but not all features. This tool has full group management with a GUI. 
 
-There are over 25 tools and many more in development. These tools aim to allow you to better manage a server without having to use slash commands in Terraria's chat. There is a full interface in game that you can use to preform actions. 
+[ESP]
 
-This mod also works for single player.
+bGamesMod es un mod que conecta Terraria con bGames, con el objetivo de enriquecer la experiencia de juego al mismo tiempo que fomenta el desarrollo de actividades productivas y saludables en dimensiones físicas, sociales, afectivas y cognitivas. El mod permite iniciar sesión en bGames y utilizar los puntos disponibles para obtener diferentes mejoras, dependiendo de la dimensión seleccionada (física, afectiva, cognitiva o social).
 
-Please check out the Forum post for more information.
+bGames es un framework desarrollado por el Laboratorio de InTeractiOn, el cual tiene como objetivo fomentar el desarrollo de actividades dejadas de lado por la adicción a los videojuegos, a través de la captura de datos de actividades saludables, otorgando puntos que podrán ser utilizados dentro de los videojuegos compatibles con bGames para obtener mejoras o recompensas.
+
+Para más información acerca de cómo instalar el framework para utilizar el mod, se deben seguir los pasos del tutorial disponible en el siguiente repositorio de GitHub:
+[url=https://github.com/clmunozm/bGames-Terraria.git Tutorial[/url]
+
+Si necesitas ayuda, no dudes en preguntar!
+
+[ENG]
+
+bGamesMod is a mod that connects Terraria with bGames, with the goal of enriching the gaming experience while promoting the development of productive and healthy activities across physical, social, emotional, and cognitive dimensions. The mod allows users to log in to bGames and use the available points to obtain various upgrades, depending on the selected dimension (physical, emotional, cognitive, or social).
+
+bGames is a framework developed by the InTeractiOn Laboratory, aimed at promoting the development of activities neglected due to video game addiction by capturing data on healthy activities. It awards points that can be used within bGames-compatible video games to obtain upgrades or rewards.
+
+For more information on how to install the framework to use the mod, please follow the steps in the tutorial available in the following GitHub repository:
+[url= Tutorial[/url]
+
+If you need any more help, feel free to ask!
+
+bGames Mod is based on the Hero's Mod for tModLoader developed by javidpack (https://github.com/JavidPack/HEROsMod).
