@@ -8,8 +8,8 @@ This project focuses on integrating bGames into Terraria through a mod. It estab
     Since bGames is a cloud-based module, an Internet connection is required to access.
 * ### **bGames Account**
     It is necessary to have a bGames profile, as if the user does not exist, they will not have points to use.
-* ### **Middleware
-    o use the mod, a middleware is required that will connect the mod with the bGames module. Instructions for running this middleware can be found in the following repository: [Middleware](https://github.com/clmunozm/Middleware-bGames-TerrariaMod)
+* ### **Middleware**
+    To use the mod, a middleware is required that will connect the mod with the bGames module. Instructions for running this middleware can be found in the following repository: [Middleware](https://github.com/clmunozm/Middleware-bGames-TerrariaMod)
 
 ---
 
