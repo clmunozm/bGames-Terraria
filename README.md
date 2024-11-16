@@ -5,7 +5,7 @@ This project focuses on integrating bGames into Terraria through a mod. It estab
 
 ## Requirements
 * ### **Internet Connection**
-    Since bGames is a cloud-based module, an Internet connection is required to access.
+    Since bGames is a cloud-based module, an Internet connection is required to access. (To use a local instance of bGames go to [bGames cloud module](https://github.com/clmunozm/bGames-module/) repository) 
 * ### **bGames Account**
     It is necessary to have a bGames profile, as if the user does not exist, they will not have points to use.
 * ### **Middleware**
